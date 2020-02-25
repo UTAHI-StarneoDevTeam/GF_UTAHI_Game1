@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureGroup>
+  <texture scale="1">Default_0.png</texture>
+  <tpe x="2" y="2" tpage="Default_0" entry="0">spri_brick_0.tpe</tpe>
+  <tpe x="38" y="2" tpage="Default_0" entry="1">spri_brick_1.tpe</tpe>
+  <tpe x="74" y="2" tpage="Default_0" entry="2">spri_brick_2.tpe</tpe>
+  <tpe x="2" y="38" tpage="Default_0" entry="3">spri_brick_3.tpe</tpe>
+  <tpe x="38" y="38" tpage="Default_0" entry="22">spri_ground_0.tpe</tpe>
+  <tpe x="74" y="38" tpage="Default_0" entry="23">spri_ground_1.tpe</tpe>
+  <tpe x="2" y="74" tpage="Default_0" entry="24">spri_ground_2.tpe</tpe>
+  <tpe x="38" y="74" tpage="Default_0" entry="4">spr_Player_0.tpe</tpe>
+  <tpe x="70" y="74" tpage="Default_0" entry="10">spr_Player_6.tpe</tpe>
+  <tpe x="2" y="110" tpage="Default_0" entry="11">spr_Player_7.tpe</tpe>
+  <tpe x="34" y="110" tpage="Default_0" entry="12">spr_Player_8.tpe</tpe>
+  <tpe x="66" y="110" tpage="Default_0" entry="13">spr_Player_9.tpe</tpe>
+  <tpe x="98" y="110" tpage="Default_0" entry="14">spr_Player_10.tpe</tpe>
+  <tpe x="98" y="110" tpage="Default_0" entry="15">spr_Player_11.tpe</tpe>
+  <tpe x="2" y="146" tpage="Default_0" entry="9">spr_Player_5.tpe</tpe>
+  <tpe x="102" y="74" tpage="Default_0" entry="6">spr_Player_2.tpe</tpe>
+  <tpe x="2" y="182" tpage="Default_0" entry="7">spr_Player_3.tpe</tpe>
+  <tpe x="2" y="218" tpage="Default_0" entry="5">spr_Player_1.tpe</tpe>
+  <tpe x="30" y="182" tpage="Default_0" entry="8">spr_Player_4.tpe</tpe>
+  <tpe x="30" y="214" tpage="Default_0" entry="16">spri_Enemy1_0.tpe</tpe>
+  <tpe x="34" y="146" tpage="Default_0" entry="17">spri_Enemy1_1.tpe</tpe>
+  <tpe x="62" y="146" tpage="Default_0" entry="18">spri_Enemy1_2.tpe</tpe>
+  <tpe x="90" y="146" tpage="Default_0" entry="19">spri_Enemy1_3.tpe</tpe>
+  <tpe x="58" y="174" tpage="Default_0" entry="20">spri_Enemy1_4.tpe</tpe>
+  <tpe x="86" y="174" tpage="Default_0" entry="21">spri_Enemy1_5.tpe</tpe>
+</TextureGroup>
