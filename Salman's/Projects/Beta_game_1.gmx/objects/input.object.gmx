@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>left = false;
+            <string>/// Initialise buttons
+left = false;
 right = false;
 up = false;
 down = false;
@@ -55,10 +56,12 @@ b_button = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>left = keyboard_check(vk_left);
+            <string>/// Check keyboard input
+left = keyboard_check(vk_left);
 right = keyboard_check(vk_right);
 up = keyboard_check(vk_up);
 down = keyboard_check(vk_down);
+a_button = keyboard_check_pressed(vk_space);
 </string>
           </argument>
         </arguments>

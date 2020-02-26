@@ -9,15 +9,14 @@
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_spikes</sprite>
     <sprite>sprites\spri_brick0</sprite>
-    <sprite>sprites\spri_Enemy1</sprite>
-    <sprite>sprites\spri_Door</sprite>
+    <sprite>sprites\spr_bug</sprite>
+    <sprite>sprites\spr_firewall</sprite>
+    <sprite>sprites\spr_door</sprite>
     <sprite>sprites\spri_Rolling</sprite>
-    <sprite>sprites\spri_lifeBar</sprite>
     <sprite>sprites\spri_Enemy2</sprite>
     <sprite>sprites\spri_Key</sprite>
-    <sprite>sprites\spri_chest</sprite>
     <sprite>sprites\spri_Enemy3</sprite>
-    <sprite>sprites\spri_switch</sprite>
+    <sprite>sprites\spr_switch</sprite>
     <sprite>sprites\spri_Projectile</sprite>
     <sprite>sprites\spri_brick1</sprite>
     <sprites name="player">
@@ -28,6 +27,11 @@
     <sprites name="masks">
       <sprite>sprites\spr_mask</sprite>
     </sprites>
+    <sprites name="items">
+      <sprite>sprites\spr_scythe</sprite>
+      <sprite>sprites\spr_battery</sprite>
+      <sprite>sprites\spr_chest</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_beta</background>
@@ -36,6 +40,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_check_input.gml</script>
+    <script>scripts\scr_check_collision.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -45,9 +50,21 @@
       <object>objects\obj_solid</object>
       <object>objects\obj_wall_top</object>
     </objects>
+    <objects name="enemies">
+      <object>objects\obj_bug</object>
+      <object>objects\obj_par_enem</object>
+    </objects>
+    <objects name="items">
+      <object>objects\obj_scythe</object>
+      <object>objects\obj_battery</object>
+      <object>objects\obj_chest</object>
+    </objects>
+    <object>objects\obj_switch</object>
+    <object>objects\obj_door</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>
+    <room>rooms\rm_test2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(0, 0, input);
+            <string>/// Initialise variables
+instance_create(0, 0, input);
 </string>
           </argument>
         </arguments>
