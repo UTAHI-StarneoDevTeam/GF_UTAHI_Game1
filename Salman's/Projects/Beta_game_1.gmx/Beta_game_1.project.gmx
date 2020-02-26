@@ -6,9 +6,10 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\spr_spikes</sprite>
     <sprite>sprites\spri_brick0</sprite>
     <sprite>sprites\spri_Enemy1</sprite>
-    <sprite>sprites\spri_ground</sprite>
     <sprite>sprites\spri_Door</sprite>
     <sprite>sprites\spri_Rolling</sprite>
     <sprite>sprites\spri_lifeBar</sprite>
@@ -19,47 +20,34 @@
     <sprite>sprites\spri_switch</sprite>
     <sprite>sprites\spri_Projectile</sprite>
     <sprite>sprites\spri_brick1</sprite>
-    <sprite>sprites\sprite17</sprite>
-    <sprites name="spri_spikes">
-      <sprite>sprites\spri_speiks</sprite>
+    <sprites name="player">
+      <sprite>sprites\spr_player_down</sprite>
+      <sprite>sprites\spr_player_up</sprite>
+      <sprite>sprites\spr_player_side</sprite>
     </sprites>
-    <sprites name="spri_Playero">
-      <sprite>sprites\spr_PlayerDown</sprite>
-      <sprite>sprites\spri_PlayerUp</sprite>
-      <sprite>sprites\spri_PlayerLeft</sprite>
-      <sprite>sprites\spri_PlayerRight</sprite>
-    </sprites>
-    <sprites name="spri_walls">
-      <sprite>sprites\sprite19</sprite>
+    <sprites name="masks">
+      <sprite>sprites\spr_mask</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
-    <background>background\backgr_beta</background>
-    <background>background\background1</background>
+    <background>background\bg_beta</background>
+    <background>background\bg_tileset</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\input.gml</script>
+    <script>scripts\scr_check_input.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_brick0</object>
-    <object>objects\obj_Player</object>
-    <object>objects\obj_Enemy1</object>
-    <object>objects\obj_ground</object>
-    <object>objects\obj_Enemy2</object>
-    <object>objects\obj_Enemy3</object>
-    <object>objects\obj_chest</object>
-    <object>objects\obj_lifeBar</object>
-    <object>objects\obj_Door</object>
-    <object>objects\obj_Key</object>
-    <object>objects\obje_Projectile</object>
-    <object>objects\obj_switch</object>
-    <object>objects\obj_brick1</object>
-    <object>objects\obj_input</object>
+    <object>objects\obj_player</object>
     <object>objects\obj_game</object>
+    <object>objects\input</object>
+    <objects name="walls">
+      <object>objects\obj_solid</object>
+      <object>objects\obj_wall_top</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
+    <room>rooms\rm_test</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
