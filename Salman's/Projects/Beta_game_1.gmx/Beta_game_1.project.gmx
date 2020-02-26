@@ -6,7 +6,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spri_brick0</sprite>
     <sprite>sprites\spri_Enemy1</sprite>
     <sprite>sprites\spri_ground</sprite>
     <sprite>sprites\spri_Door</sprite>
@@ -17,8 +16,6 @@
     <sprite>sprites\spri_chest</sprite>
     <sprite>sprites\spri_Enemy3</sprite>
     <sprite>sprites\spri_switch</sprite>
-    <sprite>sprites\spri_Projectile</sprite>
-    <sprite>sprites\spri_brick1</sprite>
     <sprite>sprites\sprite17</sprite>
     <sprites name="spri_spikes">
       <sprite>sprites\spri_speiks</sprite>
@@ -32,6 +29,13 @@
     <sprites name="spri_walls">
       <sprite>sprites\sprite19</sprite>
     </sprites>
+    <sprites name="spri_weapon">
+      <sprite>sprites\spri_weapon1</sprite>
+    </sprites>
+    <sprites name="spri_Projectile">
+      <sprite>sprites\sprite21</sprite>
+    </sprites>
+    <sprite>sprites\spri_EnemyBye</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\backgr_beta</background>

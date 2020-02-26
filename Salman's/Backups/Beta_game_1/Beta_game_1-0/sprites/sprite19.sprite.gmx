@@ -19,6 +19,7 @@
   <width>32</width>
   <height>32</height>
   <frames>
-    <frame index="0">images\spri_switch_0.png</frame>
+    <frame index="0">images\sprite19_0.png</frame>
+    <frame index="1">images\sprite19_1.png</frame>
   </frames>
 </sprite>

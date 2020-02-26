@@ -20,7 +20,5 @@
   <height>32</height>
   <frames>
     <frame index="0">images\spri_ground_0.png</frame>
-    <frame index="1">images\spri_ground_1.png</frame>
-    <frame index="2">images\spri_ground_2.png</frame>
   </frames>
 </sprite>
