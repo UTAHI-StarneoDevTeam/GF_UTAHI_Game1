@@ -36,6 +36,20 @@
       <sprite>sprites\sprite21</sprite>
     </sprites>
     <sprite>sprites\spri_EnemyBye</sprite>
+    <sprites name="spri_FireDoor">
+      <sprite>sprites\spri_fireDoor1</sprite>
+    </sprites>
+    <sprites name="spri_boss1">
+      <sprite>sprites\spri_BunMaBug</sprite>
+    </sprites>
+    <sprites name="spri_breakwall">
+      <sprite>sprites\spri_ground_new</sprite>
+    </sprites>
+    <sprites name="spri_UTAHI_Play">
+      <sprite>sprites\spri_UTAHI_D</sprite>
+      <sprite>sprites\spri_UTAHI_U</sprite>
+      <sprite>sprites\spri_UTAHI_L</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\backgr_beta</background>
