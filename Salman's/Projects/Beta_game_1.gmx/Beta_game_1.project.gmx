@@ -13,9 +13,9 @@
     <sprite>sprites\spr_firewall</sprite>
     <sprite>sprites\spr_door</sprite>
     <sprite>sprites\spri_Rolling</sprite>
-    <sprite>sprites\spri_Enemy2</sprite>
+    <sprite>sprites\spr_sqr_enem</sprite>
     <sprite>sprites\spri_Key</sprite>
-    <sprite>sprites\spri_Enemy3</sprite>
+    <sprite>sprites\spr_skull</sprite>
     <sprite>sprites\spr_switch</sprite>
     <sprite>sprites\spri_Projectile</sprite>
     <sprite>sprites\spri_brick1</sprite>
@@ -26,6 +26,7 @@
     </sprites>
     <sprites name="masks">
       <sprite>sprites\spr_mask</sprite>
+      <sprite>sprites\spr_for_skull</sprite>
     </sprites>
     <sprites name="items">
       <sprite>sprites\spr_scythe</sprite>
@@ -49,9 +50,12 @@
     <objects name="walls">
       <object>objects\obj_solid</object>
       <object>objects\obj_wall_top</object>
+      <object>objects\obj_for_skull</object>
     </objects>
     <objects name="enemies">
       <object>objects\obj_bug</object>
+      <object>objects\obj_sqr_enem</object>
+      <object>objects\obj_skull</object>
       <object>objects\obj_par_enem</object>
     </objects>
     <objects name="items">
