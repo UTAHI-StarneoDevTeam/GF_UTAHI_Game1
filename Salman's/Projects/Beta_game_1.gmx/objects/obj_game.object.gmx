@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>/// Initialise variables
+scale = 1;
+window_set_size(window_get_width() * scale, window_get_height() * scale);
 instance_create(0, 0, input);
 </string>
           </argument>
