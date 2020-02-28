@@ -52,6 +52,8 @@ inv_frames = 0;
           <argument>
             <kind>1</kind>
             <string>/// Count down invincibility frames &amp; destroy self when HP &lt;= 0
+if(global.pause) exit;
+
 if(inv_frames &gt; 0)
 {
     inv_frames--;

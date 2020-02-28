@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_music</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_spikes</sprite>
@@ -14,7 +16,6 @@
     <sprite>sprites\spr_door</sprite>
     <sprite>sprites\spri_Rolling</sprite>
     <sprite>sprites\spr_sqr_enem</sprite>
-    <sprite>sprites\spri_Key</sprite>
     <sprite>sprites\spr_skull</sprite>
     <sprite>sprites\spr_switch</sprite>
     <sprite>sprites\spri_Projectile</sprite>
@@ -32,20 +33,29 @@
       <sprite>sprites\spr_scythe</sprite>
       <sprite>sprites\spr_battery</sprite>
       <sprite>sprites\spr_chest</sprite>
+      <sprite>sprites\spr_key</sprite>
     </sprites>
+    <sprite>sprites\spr_arrow</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_beta</background>
     <background>background\bg_tileset</background>
+    <background>background\bg_start</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_check_input.gml</script>
     <script>scripts\scr_check_collision.gml</script>
+    <script>scripts\scr_menu.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_options</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_game</object>
+    <object>objects\obj_menu</object>
+    <object>objects\obj_pause</object>
     <object>objects\input</object>
     <objects name="walls">
       <object>objects\obj_solid</object>
@@ -62,13 +72,18 @@
       <object>objects\obj_scythe</object>
       <object>objects\obj_battery</object>
       <object>objects\obj_chest</object>
+      <object>objects\obj_key</object>
     </objects>
     <object>objects\obj_switch</object>
     <object>objects\obj_door</object>
+    <object>objects\obj_music</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_menu</room>
+    <room>rooms\rm_initialise_pause</room>
     <room>rooms\rm_test</room>
-    <room>rooms\rm_test2</room>
+    <room>rooms\rm_2</room>
+    <room>rooms\room6</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

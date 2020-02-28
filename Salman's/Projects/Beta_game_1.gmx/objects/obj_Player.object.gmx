@@ -58,6 +58,8 @@ hp = 3;
           <argument>
             <kind>1</kind>
             <string>/// Various states of player, e.g., moving, attacking
+if(global.pause) exit;
+
 switch(state)
 {
     case "IDLE":
@@ -216,22 +218,33 @@ scr_check_collision(obj_solid);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Count down invincibility frames &amp; game over when HP &lt;= 0
-if(inv_frames &gt; 0)
+            <string>/// Interaction with door
+if(place_meeting(x, y, obj_door))
 {
-    inv_frames--;
-}
-if(hp &lt;= 0)
-{
-    show_message("You and your friends are dead. Game over.");
-    game_restart();
+    if(obj_door.state == "FIRE")
+    {
+        if(inv_frames == 0)
+        {
+            inv_frames = 60;
+            hp -= obj_door.damage;
+        }
+    }
+    if(obj_door.state == "LOCKED" &amp;&amp; input.start)
+    {
+        show_message("You need a key to open the door.");
+    }
+    if(obj_door.state == "UNLOCKED" &amp;&amp; input.start)
+    {
+        //show_message("Congrats!");
+        //game_restart();
+        if room = rm_test
+            room_goto(rm_2);
+    }
 }
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="obj_door">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -248,26 +261,48 @@ if(hp &lt;= 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Player touches door
-if(other.state == "FIRE")
+            <string>/// Opening chest
+if(place_meeting(x, y, obj_chest) &amp;&amp; input.start)
 {
-    if(inv_frames == 0)
+    if(obj_chest.state == "CLOSED")
     {
-        inv_frames = 60;
-        hp -= other.damage;
+        obj_game.treasure++;
+        show_message("Treasure obtained! You have " + string(obj_game.treasure) + "x overall");
+        obj_chest.state = "OPENED";
+    }
+    else
+    {
+        show_message("Chest is empty...");
     }
 }
-else if(other.state == "LOCKED")
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Count down invincibility frames &amp; game over when HP &lt;= 0
+if(inv_frames &gt; 0)
 {
-    if(inv_frames == 0)
-    {
-        inv_frames = 120;
-        show_message("You need a key to open the door.");
-    }
+    inv_frames--;
 }
-else
+if(hp &lt;= 0)
 {
-    show_message("Congrats!");
+    show_message("You and your friends are dead. Game over.");
     game_restart();
 }
 </string>
@@ -304,6 +339,35 @@ with(other)
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_key">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Unlock the door
+obj_door.state = "UNLOCKED";
+
+with(other)
+{
+    instance_destroy();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_chest">
       <action>
         <libid>1</libid>
@@ -322,11 +386,14 @@ with(other)
           <argument>
             <kind>1</kind>
             <string>/// Obtain treasure
+/*
 with(other)
 {
-    show_message("Treasure obtained!");
+    obj_game.treasure++;
+    show_message("Treasure obtained! You have " + string(obj_game.treasure) + "x overall");
     instance_destroy();
 }
+*/
 </string>
           </argument>
         </arguments>

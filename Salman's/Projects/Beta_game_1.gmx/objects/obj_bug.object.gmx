@@ -57,6 +57,7 @@ direction = 0;
           <argument>
             <kind>1</kind>
             <string>/// Move back and forth
+if(global.pause) exit;
 event_inherited();
 
 if(direction == 0)

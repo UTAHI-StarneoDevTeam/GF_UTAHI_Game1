@@ -60,6 +60,7 @@ direction = 270;
           <argument>
             <kind>1</kind>
             <string>/// Move up and down
+if(global.pause) exit;
 event_inherited();
 
 switch(state)
